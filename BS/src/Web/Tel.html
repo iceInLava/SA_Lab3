@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人通讯录系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>个人通讯录</h1>
+
+<div class="contact-list">
+    <ul id="contacts">
+        <!-- 这里将显示联系人 -->
+    </ul>
+</div>
+
+<div class="add-contact">
+    <h2>展示所有</h2>
+    <form action="http://localhost:8080/show" method="get" target="_blank">
+        <input type="submit" value="展示所有" id="submitBTN">
+    </form>
+    <h2>添加联系人</h2>
+    <form action="http://localhost:8080/add" method="get" target="_blank">
+        姓名：<input type="text" name="name" placeholder="姓名">
+        住址：<input type="text" name="address" placeholder="住址">
+        电话：<input type="text" name="phone" placeholder="电话">
+        <input type="submit" value="添加联系人" id="submitBTN">
+    </form>
+    <h2>修改联系人</h2>
+    <form action="http://localhost:8080/change" method="get" target="_blank">
+        目标姓名：<input type="text" name="old_name" placeholder="姓名">
+        姓名：<input type="text" name="name" placeholder="姓名">
+        住址：<input type="text" name="address" placeholder="住址">
+        电话：<input type="text" name="phone" placeholder="电话">
+        <input type="submit" value="修改联系人" id="submitBTN">
+    </form>
+    <h2>删除联系人</h2>
+    <form action="http://localhost:8080/del" method="get" target="_blank">
+        姓名：<input type="text" name="name" placeholder="姓名">
+        <input type="submit" value="删除联系人" id="submitBTN">
+    </form>
+
+</div>
+
+<!--<script src="script.js"></script>-->
+</body>
+</html>
